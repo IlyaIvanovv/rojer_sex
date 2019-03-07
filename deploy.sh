@@ -17,6 +17,8 @@ cd /root/rs
 apt install sudo openssh-server ufw portsentry nginx mailutils
 echo "~~~~~~~~~~~~~~~~~~SUDO CONFIGURE~~~~~~~~~~~~~~~~~~~~~~~~~~"
 usermod -aG sudo rojer
+echo "~~~~~~~~~~~~~~~~~~SSH CONFIGURE~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cp resourses/sshd_config /etc/ssh/sshd_config
 echo "~~~~~~~~~~~~~~~~~~FIREWALL CONFIGURE~~~~~~~~~~~~~~~~~~~~~~~~~~"
 cp resourses/before.rules /etc/ufw/
 ufw enable

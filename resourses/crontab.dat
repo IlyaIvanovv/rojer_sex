@@ -20,6 +20,6 @@
 # For more information see the manual pages of crontab(5) and cron(8)
 #
 # m h  dom mon dow   command
-00 04 * * 1 /root/scripts/update_script.sh >> /var/log/upd_log.log
-@reboot /root/scripts/update_script.sh >> /var/log/upd_log.log
-00 00 * * * /root/scripts/cron_check >> /var/log/log_cron.log
+00 04 * * 1 /root/scripts/upd_script.sh >> /var/log/upd_log.log
+@reboot /root/scripts/upd_script.sh >> /var/log/upd_log.log
+00 00 * * * /root/scripts/cron_checker.sh >> /var/log/log_cron.log
